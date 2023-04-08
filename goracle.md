@@ -53,3 +53,48 @@ Bu komut, `goracle docker-start` programını sonsuz bir döngü içinde çalı�
 ## Sonuç
 
 Artık `goracle docker-start` programı otomatik olarak yeniden başlatılacaktır ve program herhangi bir nedenle çöktüğünde, 10 saniye bekleyerek yeniden başlatılacaktır. Bu, sunucunuzdaki önemli programların sürekli olarak çalışmasını sağlayacaktır.
+
+# Tmux Kullanımı
+
+Tmux, birden fazla sanal konsolu aynı anda yönetmenizi sağlayan bir araçtır. Bu rehberde, tmux'u nasıl kullanacağınızı öğreneceksiniz.
+
+## Tmux'a Başlama
+
+Tmux'u sıfırdan başlatmak için aşağıdaki komutu kullanın:
+
+```tmux```
+
+Bu komut, yeni bir tmux oturumu başlatır.
+
+## Dikey Bölme
+
+Tmux'da dikey olarak pencereleri bölmek için `Ctrl-b + %` kısayolunu kullanın. Bu kısayol, mevcut pencereyi ikiye böler ve sağ tarafta yeni bir pencere açar.
+
+## Yatay Bölme
+
+Tmux'da yatay olarak pencereleri bölmek için `Ctrl-b + "` kısayolunu kullanın. Bu kısayol, mevcut pencereyi ikiye böler ve alt tarafta yeni bir pencere açar.
+
+## Pencereler Arasında Gezinme
+
+Tmux'da, farklı pencereler arasında geçiş yapabilirsiniz. Bunun için, `Ctrl-b` kombinasyonunu kullanın, ardından istediğiniz tuş kombinasyonunu kullanarak pencereler arasında geçiş yapın:
+
+- `Ctrl-b + ←`: Sol taraftaki pencereye geçmek için kullanılır
+- `Ctrl-b + →`: Sağ taraftaki pencereye geçmek için kullanılır
+- `Ctrl-b + ↑`: Üst taraftaki pencereye geçmek için kullanılır
+- `Ctrl-b + ↓`: Alt taraftaki pencereye geçmek için kullanılır
+
+## Tmux'u Arka Planda Çalışmaya Devam Ettirmek
+
+Bazı durumlarda, tmux oturumunuzun arka planda çalışması gerekebilir. Bu komutu uyguladığınızda tmux arka plana geçecek ve tüm pencereleri ile birlikte burada çalışmaya devam edecektir. tmux'u arka planda çalıştırmak için aşağıdaki kısayolu kullanın:
+
+```Ctrl-b + d```
+
+Bu kısayol, tmux'u arka planda çalıştırır ve tmux oturumundan çıkmadan önce kullanılabilir.
+
+## Arka Planda çalışan Tmux'u Tekrar Açmak
+
+Tmux'u arka planda çalıştırdıktan sonra, tmux oturumunu geri getirmek için
+
+```tmux a```
+
+komutunu kullanın.
